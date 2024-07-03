@@ -1,7 +1,5 @@
 .bank-Operations {
     display: flex;
-    align-items: baseline;
-    padding-top: 10%;
     justify-content: center; /* Centrar horizontalmente */
 }
 

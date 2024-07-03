@@ -7,7 +7,7 @@ export function ShowHeader() {
     return (
         <article className='bank-Header'>
             <button className='bank-Header-name'>
-                <img className='bank-Header-logo' alt='Logo TexBank' src='public\icon.svg' />
+                <img className='bank-Header-logo' alt='Logo TexBank' src='/icon.svg' />
                 TexBank
             </button>
             <button className='bank-Header-user'>

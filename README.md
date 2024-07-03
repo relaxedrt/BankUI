@@ -1,3 +1,6 @@
+Estoy tratando de crear una interfaz que pudiera actuar como la web de un banco.
+Primero estoy maquetando todo, por eso actualmente los botones no tienen funcion y los apuntados no se realizan correctamente sino que estan hardcodeados.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
