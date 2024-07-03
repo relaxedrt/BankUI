@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    background: #222;
+}
+.root {
+    margin: 0;
+    background: #222;
+    font-family: system-ui;
+    display: grid;
+    justify-content: center; 
+    align-content: start; /* Alinear al inicio (parte superior) verticalmente */
+    min-height: 100vh;
+}

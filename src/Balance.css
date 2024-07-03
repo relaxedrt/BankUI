@@ -1,0 +1,27 @@
+.bank-Balance {
+    display: flex;
+    align-items: baseline;
+    color: #fff;
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+.bank-Balance-title {
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+}
+
+.bank-Balance-account {
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+}
+
+.bank-Balance-num {
+    font-size: 2.5rem;
+}
+
+.bank-Balance-divisa {
+    font-size: 1.5rem;
+}
+
