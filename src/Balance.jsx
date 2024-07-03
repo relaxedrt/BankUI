@@ -23,7 +23,7 @@ export function DineroEuros(){
   //Deberia crear una base de datos y recoger la variable desde ahi
   //De momento funcionare con hardcode
   var money = 1000;
-
+  
   return(
     <article className='bank-Balance'>
       <header>
@@ -34,27 +34,6 @@ export function DineroEuros(){
       <aside>
         <span className='bank-Balance-divisa'>
           €
-        </span>
-      </aside>
-    </article>
-  )
-}
-
-export function DineroDolares(){
-  //Deberia crear una base de datos y recoger la variable desde ahi
-  //De momento funcionare con hardcode
-  var money = 1000;
-
-  return(
-    <article className='bank-Balance'>
-      <header>
-        <strong className='bank-Balance-num'>
-          {money*0.92}
-        </strong>
-      </header>
-      <aside>
-        <span className='bank-Balance-divisa'>
-          $
         </span>
       </aside>
     </article>

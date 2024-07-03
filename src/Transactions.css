@@ -1,0 +1,39 @@
+.bank-Transaction {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(30, 129, 196, 0.25);
+    display: flex;
+    box-shadow: 0 10px 6px rgba(0, 0, 0, 0.486); /* Sombra hacia abajo */
+    padding-top: 15px;
+}
+
+.bank-Transaction-quantity {
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    font-size: 1.5rem;
+    padding-right: 5px;
+}
+
+.bank-Transaction-calc {
+    color: #ffffff;
+    right: 0;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+.bank-Transaction-origin {
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    padding-top: 25px;
+    font-size: 1rem;
+}
+
+.bank-Transaction-destination {
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    padding-top: 45px;
+    font-size: 1rem;
+}

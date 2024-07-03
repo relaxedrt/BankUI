@@ -19,3 +19,6 @@ body {
     justify-content: center; 
     align-content: start; /* Alinear al inicio (parte superior) verticalmente */
 }
+.transactions {
+    margin-top: 50px;
+}
