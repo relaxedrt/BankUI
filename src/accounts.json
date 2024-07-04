@@ -1,0 +1,18 @@
+{
+    "users": {
+        "@relaxedrt": {
+            "password": "123456",
+            "accounts": {
+                "1@relaxedrt": 1000,
+                "2@relaxedrt": 2000
+            }
+        },
+        "@midudev": {
+            "password": "654321",
+            "accounts": {
+                "1@midudev": 2000,
+                "2@midudev": 1000
+            }
+        }
+    }
+}

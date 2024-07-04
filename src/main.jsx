@@ -6,6 +6,15 @@ import { ShowHeader } from './Header.jsx'
 import { ShowTransaction } from './Transactions.jsx'
 import './index.css'
 
+// Importar JSON
+import accountsData from './accounts.json';
+
+// Variable global para los datos de accounts.json
+export const accounts = accountsData;
+
+// Variable global con el usuario en uso
+export const user="@relaxedrt";
+
 const Balance = ReactDOM.createRoot(document.getElementById('balance'))
 const Header = ReactDOM.createRoot(document.getElementById('header'))
 const Operations = ReactDOM.createRoot(document.getElementById('operations'))
