@@ -1,9 +1,10 @@
 import './Balance.css'
+import { user, accounts} from './main'
 
 export function BalanceTitle(){
   //Deberia crear una base de datos y recoger la variable desde ahi
   //De momento funcionare con hardcode
-  var account = "bBjeXbAh7pQtn5sY";
+  var account = `1${user}`;
 
   return(
     <article className='bank-Balance'>
@@ -22,7 +23,7 @@ export function BalanceTitle(){
 export function DineroEuros(){
   //Deberia crear una base de datos y recoger la variable desde ahi
   //De momento funcionare con hardcode
-  var money = 1000;
+  var money = accounts.users[user].accounts[`1${user}`];
   
   return(
     <article className='bank-Balance'>

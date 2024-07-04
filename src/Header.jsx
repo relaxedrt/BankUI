@@ -1,7 +1,8 @@
 import './Header.css'
+import { user } from './main'
 
 export function ShowHeader() {
-    var username = "@relaxedrt"
+    var username = user
     //Deberia crear una base de datos y recoger la variable desde ahi
     //De momento funcionare con hardcode
     return (
