@@ -12,7 +12,7 @@ body {
     align-content: start; /* Alinear al inicio (parte superior) verticalmente */
 }
 .operations {
-    margin-top: 20px;
+    margin-top: 10px;
     background: #222;
     font-family: system-ui;
     display: grid;
@@ -23,7 +23,7 @@ body {
     margin-top: 50px;
 }
 .accountChange{
-    margin-top: 10px;
+    margin-bottom: 10px;
     display: grid;
     justify-content: center; 
     align-content: start; /* Alinear al inicio (parte superior) verticalmente */

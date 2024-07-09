@@ -17,12 +17,21 @@ export const user="@relaxedrt";
 
 //Declaramos la cuenta a 1 al recargar
 var account = 1;
-export var currentAccount = `${account}${user}`;
+var currentAccount = `${account}${user}`;
 
 const Balance = ReactDOM.createRoot(document.getElementById('balance'))
 const Header = ReactDOM.createRoot(document.getElementById('header'))
 const Operations = ReactDOM.createRoot(document.getElementById('operations'))
 const Transactions = ReactDOM.createRoot(document.getElementById('transactions'))
+
+function MostrarBalance(){
+  Balance.render(
+    <React.Fragment>
+      <BalanceTitle account={currentAccount} />
+      <DineroEuros money={accounts.users[user].accounts[currentAccount]}/>
+    </React.Fragment>
+  )
+}
 
 function SiguienteCuenta() {
   if (account < (Object.keys(accounts.users[user].accounts).length)) {
@@ -30,7 +39,10 @@ function SiguienteCuenta() {
   }else{
     account = 1;
   }
-  console.log(account);
+  currentAccount = `${account}${user}`;
+  MostrarBalance();
+  //window.location.reload()
+  console.log(currentAccount);
 };
 
 function AnteriorCuenta() {
@@ -39,7 +51,10 @@ function AnteriorCuenta() {
   }else{
     account = (Object.keys(accounts.users[user].accounts).length);
   }
-  console.log(account);
+  currentAccount = `${account}${user}`;
+  MostrarBalance();
+  //window.location.reload()
+  console.log(currentAccount);
 };
 
 Header.render(
@@ -48,8 +63,13 @@ Header.render(
 
 Balance.render(
   <React.Fragment>
-    <BalanceTitle />
-    <DineroEuros />
+    <BalanceTitle account={currentAccount} />
+    <DineroEuros money={accounts.users[user].accounts[currentAccount]}/>
+  </React.Fragment>
+)
+
+Operations.render(
+  <React.Fragment>
     <table className='accountChange'>
       <tr>
         <td>
@@ -60,11 +80,6 @@ Balance.render(
         </td>
       </tr>
     </table>
-  </React.Fragment>
-)
-
-Operations.render(
-  <React.Fragment>
     <table>
       <tr>
         <td><CreateButton text="Bizum"/></td>
