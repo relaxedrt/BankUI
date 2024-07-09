@@ -15,10 +15,32 @@ export const accounts = accountsData;
 // Variable global con el usuario en uso
 export const user="@relaxedrt";
 
+//Declaramos la cuenta a 1 al recargar
+var account = 1;
+export var currentAccount = `${account}${user}`;
+
 const Balance = ReactDOM.createRoot(document.getElementById('balance'))
 const Header = ReactDOM.createRoot(document.getElementById('header'))
 const Operations = ReactDOM.createRoot(document.getElementById('operations'))
 const Transactions = ReactDOM.createRoot(document.getElementById('transactions'))
+
+function SiguienteCuenta() {
+  if (account < (Object.keys(accounts.users[user].accounts).length)) {
+    account = account + 1;
+  }else{
+    account = 1;
+  }
+  console.log(account);
+};
+
+function AnteriorCuenta() {
+  if (account != 1) {
+    account = account - 1;
+  }else{
+    account = (Object.keys(accounts.users[user].accounts).length);
+  }
+  console.log(account);
+};
 
 Header.render(
   <ShowHeader />
@@ -28,6 +50,16 @@ Balance.render(
   <React.Fragment>
     <BalanceTitle />
     <DineroEuros />
+    <table className='accountChange'>
+      <tr>
+        <td>
+          <CreateButton text="<<==" onClick={AnteriorCuenta}/>
+        </td>
+        <td>
+          <CreateButton text="==>>" onClick={SiguienteCuenta}/>
+        </td>
+      </tr>
+    </table>
   </React.Fragment>
 )
 

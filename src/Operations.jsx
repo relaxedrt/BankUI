@@ -1,9 +1,9 @@
 import './Operations.css'
 
-export function CreateButton({text}){
+export function CreateButton({text, onClick}){
     return(
         <article className='bank-Operations'>
-            <button className='bank-Operations-transfer'>{text}</button>
+            <button className='bank-Operations-transfer' onClick={onClick}>{text}</button>
         </article>
         
     )
