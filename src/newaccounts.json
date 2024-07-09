@@ -1,0 +1,49 @@
+{
+    "users": {
+        "@relaxedrt": {
+            "password": "123456",
+            "accounts": {
+                "1@relaxedrt": 1000,
+                "2@relaxedrt": 2000
+            }
+        },
+        "@midudev": {
+            "password": "654321",
+            "accounts": {
+                "1@midudev": 2000,
+                "2@midudev": 1000
+            }
+        }
+    },
+    "operations":{
+        "transfers":{
+            "0001":{
+            "from": "1@relaxedrt",
+            "to": "1@midudev",
+            "amount": 1000
+            },
+            "0002":{
+                "from": "2@relaxedrt",
+                "to": "1@relaxedrt",
+                "amount": 1000
+            },
+            "0003":{
+                "from": "2@midudev",
+                "to": "1@midudev",
+                "amount": 1000
+            }
+        },
+        "inputs":{
+            "0001":{
+                "to":"1@relaxedrt",
+                "amount": 1000
+            }
+        },
+        "outputs":{
+            "0001":{
+                "from":"1@relaxedrt",
+                "amount": 1000
+            }
+        }
+    }
+}

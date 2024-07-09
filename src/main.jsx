@@ -82,7 +82,7 @@ Operations.render(
     </table>
     <table>
       <tr>
-        <td><CreateButton text="Bizum"/></td>
+        <td><CreateButton text="Retiro"/></td>
         <td><CreateButton text="Transferencia"/></td>
         <td><CreateButton text="Ingreso"/></td>
       </tr>
